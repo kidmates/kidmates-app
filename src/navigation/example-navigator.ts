@@ -1,10 +1,10 @@
 import { createStackNavigator } from "react-navigation"
-import { FirstExampleScreen } from "../views/example/first-example-screen"
-import { SecondExampleScreen } from "../views/example/second-example-screen"
+import { IndexScreen } from "../views/index-screen"
+import { DrawerScreens } from "./drawer-navigator"
 
 export const ExampleNavigator = createStackNavigator({
-  firstExample: { screen: FirstExampleScreen },
-  secondExample: { screen: SecondExampleScreen },
+  index: { screen: IndexScreen },
+  drawerStack: { screen: DrawerScreens },
 },
 {
   headerMode: "none",
